@@ -1,0 +1,272 @@
+body {
+  font-family: "Helvetica";
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  color: white;
+  margin: 5%;
+
+}
+
+a {
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+a:hover{
+  text-decoration: underline;
+}
+/* for logo */
+a h2{
+float:left;
+display: inline;
+
+}
+.eventlink{
+  text-transform: none;
+  text-decoration: underline;
+}
+
+.errorContainer {
+  background-color: pink;
+  color: red;
+  border: 1px red pink;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-bottom: 3px;
+  display: inline-block;
+  width: 100%;
+}
+
+.hiddenError {
+  display: none;
+}
+
+#header,header {
+  width: 70%;
+  margin-right: 0px;
+}
+
+td{
+  width: 25%;
+}
+td img{
+  width: 90%;
+}
+
+
+
+.source {
+  font-size: .7em;
+}
+
+#footer{
+width: 100%;
+font-size: .7em;
+clear:both;
+
+}
+
+#footer h5{
+  margin: 0;
+  margin-bottom: -7px;
+}
+
+
+
+h4{
+  margin-bottom: -15px;
+
+}
+img{
+  width: 50px;
+  float: left;
+  display: inline;
+  padding-right: 10px;
+}
+#frontimg{
+  width: 120px;
+}
+#festival{
+  margin-right: 20px;
+}
+#event_description{
+  float: left;
+  display: inline;
+  width: 37%;
+}
+
+/* Following ccode is to style webform */
+/* chrome and safari placeholder styling */
+::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+
+input[type=text],input[type=email],button{
+  border:0;
+  margin-bottom: 5px;
+  width: 100%;
+
+}
+input[type=text],input[type=email]{
+height:20px;
+font-size: 15px;
+}
+
+.large_inputs{
+  padding-bottom: 40px;
+
+}
+button{
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form label{
+font-size: 20px;
+padding-bottom: 20px;
+margin-top: 5px;
+
+}
+#response{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+/* mobile responsive styling */
+@media only screen and (max-width:480px) {
+
+  #nav {
+    float:left; /* align is for text float is for div */
+    text-align: left;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-image: url( "../images/background.jpg");
+    padding-bottom: 20px;
+  }
+  #header , header{
+    margin-top:130px;
+    width:100%;
+
+  }
+  /* names of pages that aren't home*/
+  h1{
+    font-size: 2.3em;
+    margin-top: -10px;
+  }
+
+  h2 a{
+  font-size: .8em;
+  }
+  /* "35th annual appp fest" for home pg */
+  #frontpg {
+    font-size: 1.5em;
+  }
+  /* apple to accompany "35th annual .." */
+  #frontimg{
+    width: 60px;
+  }
+  #festival, #vendors{
+    width: 100%;
+  }
+
+  #event_description{
+    width: 100%;
+  }
+
+  #performance_pic{
+    width: 100%;
+    float:none;
+  }
+
+  #directionsTable {
+    display: none;
+  }
+
+  #mobileDirections img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/*tablet responsive styling */
+@media only screen and (min-width:480px) and (max-width:720px){
+  #mobileDirections img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #directionsTable {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:721px){
+  #mobileDirections{
+    display: none;
+  }
+}
+
+/* desktop responsive styling */
+@media screen and (min-width: 481px) {
+  h1{
+    font-size: 3em;
+    margin-top: -10px;
+  }
+
+  #nav {
+    float:right; /* align is for text float is for div */
+    text-align: right;
+    width: 20%;
+    position: fixed;
+    right: 50px;
+    top:100px;
+  }
+  #nav h4{
+    margin-bottom: 75px;
+  }
+
+  .fixed_footer{
+    position: fixed;
+    bottom: 0;
+  }
+
+  /* "35th annual appp fest" for home pg */
+  #frontpg {
+    font-size: 3.5em;
+  }
+  /* apple to accompany "35th annual .." */
+  #frontimg{
+    width: 120px;
+  }
+  #festival{
+    width: 400px;
+
+  }
+  #vendors{
+    width: 400px;
+    clear:both;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  header p{
+    clear:both;
+  }
+
+  #performance_pic{
+    width: 80%;
+    float:none;
+  }
+
+  td.text {
+    width: 10%;
+    padding-right: 20px;
+    vertical-align: top;
+  }
+}
